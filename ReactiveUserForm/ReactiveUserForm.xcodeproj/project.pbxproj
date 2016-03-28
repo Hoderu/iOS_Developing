@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F194A8201B10DC3B00167F45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F194A81F1B10DC3B00167F45 /* main.m */; };
+		F194A8231B10DC3B00167F45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F194A8221B10DC3B00167F45 /* AppDelegate.m */; };
+		F194A8261B10DC3B00167F45 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F194A8251B10DC3B00167F45 /* ViewController.m */; };
+		F194A8291B10DC3B00167F45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F194A8271B10DC3B00167F45 /* Main.storyboard */; };
+		F194A82B1B10DC3B00167F45 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F194A82A1B10DC3B00167F45 /* Images.xcassets */; };
+		F194A82E1B10DC3B00167F45 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F194A82C1B10DC3B00167F45 /* LaunchScreen.xib */; };
+		F194A83A1B10DC3B00167F45 /* ReactiveUserFormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F194A8391B10DC3B00167F45 /* ReactiveUserFormTests.m */; };
+		F194A8541B10DC7600167F45 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F194A84F1B10DC4200167F45 /* ReactiveCocoa.framework */; };
+		F194A8561B10DCA900167F45 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F194A84F1B10DC4200167F45 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F194A8341B10DC3B00167F45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F194A8121B10DC3B00167F45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F194A8191B10DC3B00167F45;
+			remoteInfo = ReactiveUserForm;
+		};
+		F194A84A1B10DC4200167F45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F194A8431B10DC4100167F45 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D04725EA19E49ED7006002AA;
+			remoteInfo = "ReactiveCocoa-Mac";
+		};
+		F194A84C1B10DC4200167F45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F194A8431B10DC4100167F45 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D04725F519E49ED7006002AA;
+			remoteInfo = "ReactiveCocoa-MacTests";
+		};
+		F194A84E1B10DC4200167F45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F194A8431B10DC4100167F45 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D047260C19E49F82006002AA;
+			remoteInfo = "ReactiveCocoa-iOS";
+		};
+		F194A8501B10DC4200167F45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F194A8431B10DC4100167F45 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D047261619E49F82006002AA;
+			remoteInfo = "ReactiveCocoa-iOSTests";
+		};
+		F194A8521B10DC6C00167F45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F194A8431B10DC4100167F45 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D047260B19E49F82006002AA;
+			remoteInfo = "ReactiveCocoa-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F194A8551B10DC8400167F45 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F194A8561B10DCA900167F45 /* ReactiveCocoa.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F194A81A1B10DC3B00167F45 /* ReactiveUserForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveUserForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F194A81E1B10DC3B00167F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F194A81F1B10DC3B00167F45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F194A8211B10DC3B00167F45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F194A8221B10DC3B00167F45 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F194A8241B10DC3B00167F45 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F194A8251B10DC3B00167F45 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F194A8281B10DC3B00167F45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F194A82A1B10DC3B00167F45 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F194A82D1B10DC3B00167F45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F194A8331B10DC3B00167F45 /* ReactiveUserFormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveUserFormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F194A8381B10DC3B00167F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F194A8391B10DC3B00167F45 /* ReactiveUserFormTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveUserFormTests.m; sourceTree = "<group>"; };
+		F194A8431B10DC4100167F45 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = ../../../reactivecocoa/ReactiveCocoa/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F194A8171B10DC3B00167F45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F194A8541B10DC7600167F45 /* ReactiveCocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F194A8301B10DC3B00167F45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F194A8111B10DC3B00167F45 = {
+			isa = PBXGroup;
+			children = (
+				F194A8431B10DC4100167F45 /* ReactiveCocoa.xcodeproj */,
+				F194A81C1B10DC3B00167F45 /* ReactiveUserForm */,
+				F194A8361B10DC3B00167F45 /* ReactiveUserFormTests */,
+				F194A81B1B10DC3B00167F45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F194A81B1B10DC3B00167F45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F194A81A1B10DC3B00167F45 /* ReactiveUserForm.app */,
+				F194A8331B10DC3B00167F45 /* ReactiveUserFormTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F194A81C1B10DC3B00167F45 /* ReactiveUserForm */ = {
+			isa = PBXGroup;
+			children = (
+				F194A8211B10DC3B00167F45 /* AppDelegate.h */,
+				F194A8221B10DC3B00167F45 /* AppDelegate.m */,
+				F194A8241B10DC3B00167F45 /* ViewController.h */,
+				F194A8251B10DC3B00167F45 /* ViewController.m */,
+				F194A8271B10DC3B00167F45 /* Main.storyboard */,
+				F194A82A1B10DC3B00167F45 /* Images.xcassets */,
+				F194A82C1B10DC3B00167F45 /* LaunchScreen.xib */,
+				F194A81D1B10DC3B00167F45 /* Supporting Files */,
+			);
+			path = ReactiveUserForm;
+			sourceTree = "<group>";
+		};
+		F194A81D1B10DC3B00167F45 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F194A81E1B10DC3B00167F45 /* Info.plist */,
+				F194A81F1B10DC3B00167F45 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F194A8361B10DC3B00167F45 /* ReactiveUserFormTests */ = {
+			isa = PBXGroup;
+			children = (
+				F194A8391B10DC3B00167F45 /* ReactiveUserFormTests.m */,
+				F194A8371B10DC3B00167F45 /* Supporting Files */,
+			);
+			path = ReactiveUserFormTests;
+			sourceTree = "<group>";
+		};
+		F194A8371B10DC3B00167F45 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F194A8381B10DC3B00167F45 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F194A8441B10DC4100167F45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F194A84B1B10DC4200167F45 /* ReactiveCocoa.framework */,
+				F194A84D1B10DC4200167F45 /* ReactiveCocoa-MacTests.xctest */,
+				F194A84F1B10DC4200167F45 /* ReactiveCocoa.framework */,
+				F194A8511B10DC4200167F45 /* ReactiveCocoa-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F194A8191B10DC3B00167F45 /* ReactiveUserForm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F194A83D1B10DC3B00167F45 /* Build configuration list for PBXNativeTarget "ReactiveUserForm" */;
+			buildPhases = (
+				F194A8161B10DC3B00167F45 /* Sources */,
+				F194A8171B10DC3B00167F45 /* Frameworks */,
+				F194A8181B10DC3B00167F45 /* Resources */,
+				F194A8551B10DC8400167F45 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F194A8531B10DC6C00167F45 /* PBXTargetDependency */,
+			);
+			name = ReactiveUserForm;
+			productName = ReactiveUserForm;
+			productReference = F194A81A1B10DC3B00167F45 /* ReactiveUserForm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F194A8321B10DC3B00167F45 /* ReactiveUserFormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F194A8401B10DC3B00167F45 /* Build configuration list for PBXNativeTarget "ReactiveUserFormTests" */;
+			buildPhases = (
+				F194A82F1B10DC3B00167F45 /* Sources */,
+				F194A8301B10DC3B00167F45 /* Frameworks */,
+				F194A8311B10DC3B00167F45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F194A8351B10DC3B00167F45 /* PBXTargetDependency */,
+			);
+			name = ReactiveUserFormTests;
+			productName = ReactiveUserFormTests;
+			productReference = F194A8331B10DC3B00167F45 /* ReactiveUserFormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F194A8121B10DC3B00167F45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = mipt;
+				TargetAttributes = {
+					F194A8191B10DC3B00167F45 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					F194A8321B10DC3B00167F45 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = F194A8191B10DC3B00167F45;
+					};
+				};
+			};
+			buildConfigurationList = F194A8151B10DC3B00167F45 /* Build configuration list for PBXProject "ReactiveUserForm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F194A8111B10DC3B00167F45;
+			productRefGroup = F194A81B1B10DC3B00167F45 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F194A8441B10DC4100167F45 /* Products */;
+					ProjectRef = F194A8431B10DC4100167F45 /* ReactiveCocoa.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F194A8191B10DC3B00167F45 /* ReactiveUserForm */,
+				F194A8321B10DC3B00167F45 /* ReactiveUserFormTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F194A84B1B10DC4200167F45 /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = F194A84A1B10DC4200167F45 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F194A84D1B10DC4200167F45 /* ReactiveCocoa-MacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ReactiveCocoa-MacTests.xctest";
+			remoteRef = F194A84C1B10DC4200167F45 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F194A84F1B10DC4200167F45 /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = F194A84E1B10DC4200167F45 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F194A8511B10DC4200167F45 /* ReactiveCocoa-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ReactiveCocoa-iOSTests.xctest";
+			remoteRef = F194A8501B10DC4200167F45 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F194A8181B10DC3B00167F45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F194A8291B10DC3B00167F45 /* Main.storyboard in Resources */,
+				F194A82E1B10DC3B00167F45 /* LaunchScreen.xib in Resources */,
+				F194A82B1B10DC3B00167F45 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F194A8311B10DC3B00167F45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F194A8161B10DC3B00167F45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F194A8261B10DC3B00167F45 /* ViewController.m in Sources */,
+				F194A8231B10DC3B00167F45 /* AppDelegate.m in Sources */,
+				F194A8201B10DC3B00167F45 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F194A82F1B10DC3B00167F45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F194A83A1B10DC3B00167F45 /* ReactiveUserFormTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F194A8351B10DC3B00167F45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F194A8191B10DC3B00167F45 /* ReactiveUserForm */;
+			targetProxy = F194A8341B10DC3B00167F45 /* PBXContainerItemProxy */;
+		};
+		F194A8531B10DC6C00167F45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ReactiveCocoa-iOS";
+			targetProxy = F194A8521B10DC6C00167F45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F194A8271B10DC3B00167F45 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F194A8281B10DC3B00167F45 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F194A82C1B10DC3B00167F45 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F194A82D1B10DC3B00167F45 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F194A83B1B10DC3B00167F45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F194A83C1B10DC3B00167F45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F194A83E1B10DC3B00167F45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ReactiveUserForm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F194A83F1B10DC3B00167F45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ReactiveUserForm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F194A8411B10DC3B00167F45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReactiveUserFormTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactiveUserForm.app/ReactiveUserForm";
+			};
+			name = Debug;
+		};
+		F194A8421B10DC3B00167F45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReactiveUserFormTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactiveUserForm.app/ReactiveUserForm";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F194A8151B10DC3B00167F45 /* Build configuration list for PBXProject "ReactiveUserForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F194A83B1B10DC3B00167F45 /* Debug */,
+				F194A83C1B10DC3B00167F45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F194A83D1B10DC3B00167F45 /* Build configuration list for PBXNativeTarget "ReactiveUserForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F194A83E1B10DC3B00167F45 /* Debug */,
+				F194A83F1B10DC3B00167F45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F194A8401B10DC3B00167F45 /* Build configuration list for PBXNativeTarget "ReactiveUserFormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F194A8411B10DC3B00167F45 /* Debug */,
+				F194A8421B10DC3B00167F45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F194A8121B10DC3B00167F45 /* Project object */;
+}
