@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Мои курсы-->
+        <scene sceneID="nFb-iV-CDG">
+            <objects>
+                <tableViewController id="Sss-hR-zvc" customClass="CourseTableViewController" customModule="inStudy_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="WFv-IW-WaK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="150" selectionStyle="none" indentationWidth="10" reuseIdentifier="ActiveCourseTableViewCell" rowHeight="50" id="5XK-mk-GHM" customClass="CourseTableViewCell" customModule="inStudy_iOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="89" tableViewCell="5XK-mk-GHM" id="LtL-Gc-TRk">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="49"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="35" placeholderIntrinsicHeight="35" translatesAutoresizingMaskIntoConstraints="NO" id="aP4-QH-5y9" customClass="Mark" customModule="inStudy_iOS" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="0.0" width="25" height="25"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" notEnabled="YES"/>
+                                            </accessibility>
+                                        </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenMark" highlightedImage="greenMark" translatesAutoresizingMaskIntoConstraints="NO" id="bj8-Ki-PO5">
+                                            <rect key="frame" x="51" y="93" width="240" height="128"/>
+                                            <animations/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name of the course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdB-8o-FDv">
+                                            <rect key="frame" x="30" y="2" width="570" height="21"/>
+                                            <animations/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                            </accessibility>
+                                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="14"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" placeholderIntrinsicWidth="584" placeholderIntrinsicHeight="21" text="Timetable of the course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLe-eb-70I">
+                                            <rect key="frame" x="16" y="22" width="584" height="21"/>
+                                            <animations/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                            </accessibility>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="bj8-Ki-PO5"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="mark" destination="aP4-QH-5y9" id="TP4-Jr-R6D"/>
+                                    <outlet property="nameLabel" destination="RdB-8o-FDv" id="arF-E5-IV7"/>
+                                    <outlet property="timetableLabel" destination="lLe-eb-70I" id="Zyf-dK-XTn"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DeletedCourseTableViewCell" rowHeight="70" id="cYb-A6-edh" customClass="DeletedCourseTableViewCell" customModule="inStudy_iOS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="142" width="600" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cYb-A6-edh" id="edC-xc-XHn">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="69"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name of the course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6E-9w-fb0">
+                                            <rect key="frame" x="67" y="10" width="533" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n4j-h5-Fuv" customClass="Mark" customModule="inStudy_iOS" customModuleProvider="target">
+                                            <rect key="frame" x="43" y="8" width="25" height="25"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8VS-ca-kas">
+                                            <rect key="frame" x="-39" y="-61" width="25" height="35"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="22w-a2-34p">
+                                            <rect key="frame" x="-29" y="-51" width="25" height="35"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="drI-nL-VcD" customClass="AddControl" customModule="inStudy_iOS" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="-1" width="35" height="70"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nwF-yR-bqd">
+                                            <rect key="frame" x="0.0" y="0.0" width="45" height="70"/>
+                                            <animations/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timetable of the course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjb-mq-pbF">
+                                            <rect key="frame" x="51" y="32" width="549" height="21"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="8VS-ca-kas"/>
+                                            <exclude reference="22w-a2-34p"/>
+                                            <exclude reference="nwF-yR-bqd"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="addControl" destination="drI-nL-VcD" id="YfX-wX-eth"/>
+                                    <outlet property="mark" destination="n4j-h5-Fuv" id="xK3-aG-7cl"/>
+                                    <outlet property="nameLabel" destination="n6E-9w-fb0" id="FmE-Ha-eda"/>
+                                    <outlet property="timetableLabel" destination="Yjb-mq-pbF" id="VdF-Me-hBl"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Sss-hR-zvc" id="hkc-ZB-FpL"/>
+                            <outlet property="delegate" destination="Sss-hR-zvc" id="LC2-1n-rAW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Мои курсы" id="g5C-Cl-Uou">
+                        <barButtonItem key="leftBarButtonItem" image="menuIcon" id="8pt-ww-6qT"/>
+                        <barButtonItem key="rightBarButtonItem" image="settingsIcon" id="jBd-gM-OLF"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MES-05-dwg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3026" y="82"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="g4D-Pm-p0E">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C7k-AU-CtT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sbg-fP-8td">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Sss-hR-zvc" kind="relationship" relationship="rootViewController" id="kcT-Dm-D3F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ieZ-GE-gHI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2214" y="82"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="greenMark" width="10" height="10"/>
+        <image name="menuIcon" width="32" height="32"/>
+        <image name="settingsIcon" width="32" height="32"/>
+    </resources>
+</document>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ChangePasswordViewController.SubmitChangePasswordButtonTap(AnyObject) -&gt; ():ChangePasswordViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "GlobalStorage.token">
+            </PersistentString>
+            <PersistentString
+               value = "GlobalStorage.password">
+            </PersistentString>
+            <PersistentString
+               value = "NewPasswordText.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginViewController.tryLogin(AnyObject) -&gt; ():LoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "GlobalStorage.token">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TimeTableViewController.loadTimeTable() -&gt; ():TimeTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "GlobalStorage.token">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
